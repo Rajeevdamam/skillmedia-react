@@ -1,0 +1,46 @@
+.sign-button {
+	margin-top: 3vw !important;
+	background-color: #534ebf;
+}
+
+.submit-button {
+	display: flex !important;
+	justify-content: space-around !important;
+}
+.signup-form {
+	margin: 2% auto 0 60%;
+	max-width: 500px;
+	background: white;
+	padding: 2vw 4vw;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 0px rgb(200, 200, 200);
+}
+
+.page {
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+	.secure-login-svg img {
+		display: none;
+	}
+	.signup-form {
+		position: inherit;
+		margin-top: 5vw;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 559px) {
+	body {
+		position: inherit;
+		right: 0%;
+	}
+
+	.signup-form {
+		/* box-shadow: none; */
+		padding: 5%;
+		margin-top: 5vw;
+	}
+}

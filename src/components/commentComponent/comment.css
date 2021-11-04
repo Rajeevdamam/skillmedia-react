@@ -1,0 +1,27 @@
+.comment-div {
+	padding: 5px;
+	margin-left: 2% !important;
+}
+
+.comment-main-div:hover {
+	background-color: white;
+}
+
+.icons {
+	margin-right: 5%;
+	font-size: 25px !important;
+}
+
+.delete-color {
+	color: red;
+}
+
+.color {
+	color: #534ebf;
+}
+
+.like-count {
+	font-size: 12px;
+	color: #958f8f;
+	margin-right: 10px;
+}

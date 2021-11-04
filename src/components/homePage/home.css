@@ -1,0 +1,76 @@
+.main-container {
+	max-width: 550px;
+	margin: auto;
+	margin-top:0px !important;
+}
+
+.main-div {
+	/* display: flex; */
+	width: 100%;
+}
+
+.side-bar {
+	width: 22%;
+}
+
+.posts-main-div {
+	margin: auto;
+}
+
+.tags-lists > * {
+	margin-bottom: 7%;
+}
+
+.backToTop {
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+	.main-div {
+		display: inline;
+		width: 100%;
+	}
+
+	.side-bar {
+		display: none;
+	}
+
+	.posts-main-div {
+		width: 100%;
+	}
+
+	.main-container {
+		margin: auto;
+	}
+
+	.backToTop {
+		bottom: 15px;
+		right: 15px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.main-div {
+		display: inline;
+		width: 100%;
+	}
+
+	.side-bar {
+		display: none;
+	}
+
+	.posts-main-div {
+		width: 100%;
+	}
+
+	.main-container {
+		margin: auto;
+	}
+
+	.backToTop {
+		display: none;
+	}
+}
