@@ -17,7 +17,7 @@ import {
 const loginUser = async (data: any) => {
 	try {
 		let response = await axios.post(
-			"${baseUrl}users/login",
+			`${baseUrl}users/login`,
 			JSON.stringify(data),
 			{ headers: { "Content-Type": "application/json" } }
 		);
@@ -107,7 +107,6 @@ const addComment = async (data: any) => {
 
 const addPost = async (data: any) => {
 	try {
-		console.log(`localStorage.getItem("token")`, localStorage.getItem("token"));
 		const res = await axios.post(`${baseUrl}posts`, data, {
 			headers: {
 				"Content-Type": "application/json",
@@ -202,7 +201,6 @@ const searchedUserProfile = async (name: any) => {
 const searchedUserPosts = async (name: any) => {
 	try {
 		const res = await axios.get(`${baseUrl}posts/userName/${name}`);
-		console.log(res.data);
 		return { type: USER_POSTS, payload: res.data };
 	} catch (err) {
 		return err;

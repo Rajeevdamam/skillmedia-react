@@ -48,7 +48,6 @@ export default function CardComponent({ data, flag, type }: Props) {
 	};
 
 	const postDelete = async () => {
-		console.log("1. in post delet");
 		try {
 			const result = await deletePost(data._id);
 			dispatch(result);
